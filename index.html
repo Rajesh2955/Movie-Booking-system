@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Booking System</h1>
+
+        <!-- Movie Selection -->
+        <div class="movie-selection">
+            <h2>Select a Movie</h2>
+            <select id="movie-select">
+                <option value="0">--Select a Movie--</option>
+                <option value="1">Avengers: Endgame</option>
+                <option value="2">Spider-Man: No Way Home</option>
+                <option value="3">Inception</option>
+            </select>
+        </div>
+
+        <!-- Showtime Selection -->
+        <div class="showtimes" id="showtimes">
+            <h2>Select Showtime</h2>
+            <select id="showtime-select">
+                <!-- Showtimes will be populated here -->
+            </select>
+        </div>
+
+        <!-- Ticket Selection -->
+        <div class="ticket-selection" id="ticket-selection">
+            <h2>Number of Tickets</h2>
+            <input type="number" id="ticket-count" min="1" max="10" value="1">
+        </div>
+
+        <!-- Booking Details -->
+        <div class="booking-details" id="booking-details" style="display: none;">
+            <h2>Your Booking</h2>
+            <p id="movie-details"></p>
+            <p id="showtime-details"></p>
+            <p id="ticket-details"></p>
+            <button onclick="confirmBooking()">Confirm Booking</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
